@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaphenath.site</title>
+
+ <link rel="stylesheet" href="Home.html">
+ <link rel="stylesheet" href="Login.html">
+ <link rel="stylesheet" href="CSS.css">   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="checkCookies()">
+  <span id="opnbtn" onclick="openNav()">&#9776;</span>
+
+<div id="sidenav" class="navbar">
+  <a id="clsbtn" onclick="closeNav()">&times;</a>
+  <img src="Smoke Shack - Steak_Grill.png" id="logo" alt=""><br>
+  <a href="Index.html">Home</a><br><br>
+  <a href="">About</a><br><br>
+  <div class="dropdown">
+  <button type="button" class="dropbtn" onclick="myFunction()">Contacts
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a rel="noopener" target="_blank" href="https://www.facebook.com/profile.php?id=61551019854967">Facebook</a>
+    <a href="">Instagram</a>
+    <a href="">Twitter</a>
+    <a href="">Telegram</a>
+    <a href="">Whatsapp</a>
+    <a href="">Email</a>
+    <a href="">Telephone</a>
+  </div>
+  </div> 
+</div>
+
+<form id="signup-form" action="/submit-form" method="post">
+    <label for="firstname">First Name <br>
+        <input type="text" name="firstname" id="fn" value="" required/>
+    </label><br/><br>
+    <label for="surname">Surname <br>
+        <input type="text" name="surname" id="sn" value="" required/>
+    </label><br><br>
+    <label for="birthdate">Date Of Birth <br />
+        <input type="text" name="birthdate" id="db" value="" required/>
+    </label><br><br />
+    <label for="username">Username <br />
+        <input type="text" name="username" id="un" value="" required/>
+    </label><br><br />
+    <label for="password">Password <br />
+        <input type="text" name="password" id="psw" value="" required/>
+    </label><br><br />
+    <label for="address">Address <br />
+        <input type="text" name="address" id="add" value="" required/>
+    </label><br><br />
+
+    <button type="submit" id="signup">SIGN UP</button>
+    <p><b>__________Or Login__________</b></p>
+    <a href="Login.html"  id="login">LOG IN</a>
+</form>
+</body>
+<script src="JS.js"></script>
+</html>

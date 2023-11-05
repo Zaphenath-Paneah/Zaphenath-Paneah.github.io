@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+ <link rel="stylesheet" href="Index.html">
+ <link rel="stylesheet" href="Home.html">
+ <link rel="stylesheet" href="CSS.css">   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <span id="openbtn" onclick="openNav()">&#9776;</span>
+
+    <div id="sidenaav" class="navbar">
+        <a id="closbtn" onclick="closeNav()">&times;</a>
+        <img src="Smoke Shack - Steak_Grill.png" id="logoo" alt=""><br>
+        <a href="Index.html">Home</a><br><br>
+        <a href="">About</a><br><br>
+        <div class="dropdown">
+        <button type="button" class="dropbtn" onclick="myFunction()">Contacts
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDroopdown">
+          <a rel="noopener" target="_blank" href="https://www.facebook.com/profile.php?id=61551019854967">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Twitter</a>
+          <a href="">Telegram</a>
+          <a href="">Whatsapp</a>
+          <a href="">Email</a>
+          <a href="">Telephone</a>
+        </div>
+        </div> 
+    </div>
+
+    <form id="login-form" action="/submit-form" method="post">
+        <div id="errmsg"></div>
+        <label for="username">Username <br />
+            <input type="text" name="username" id="Un" value="" required/>
+        </label><br><br />
+        <label for="password">Password <br />
+            <input type="text" name="password" id="Psw" value="" required/>
+        </label><br><br />
+        <button type="submit"  id="login">LOG IN</button>
+    </form>
+</body>
+<script src="JS.js"></script>
+</html>
